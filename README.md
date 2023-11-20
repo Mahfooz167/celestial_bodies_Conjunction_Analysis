@@ -60,8 +60,12 @@ Lower dilution values, indicating higher certainty in predicting conjunction eve
 
 Object Types & Collision Probability:
 Variances in collision probabilities were noticed among different object types (satellites, debris), highlighting diverse risk profiles across classifications.
-Temporal Correlations:
 
+### CONCLUSION
+
+Analyzing over 250,000 daily conjunction predictions of Resident Space Objects (RSOs) highlighted critical trends. Parameters like Time of Closest Approach (TCA) range and relative speed significantly influence collision risk assessment. Higher TCA ranges increase uncertainty, while lower relative speeds decrease collision risks. Dilution plays a vital role—higher dilution challenges risk assessment, while lower dilution enhances prediction accuracy. Effective visualization revealed correlations between TCA range, dilution, and collision risks, crucial for proactive satellite safety measures in a growing space environment.
+
+## In conclusion, this analysis serves as a foundation for devising effective strategies and protocols to manage conjunction events, safeguard satellite missions, and maintain a sustainable and secure space environment.
 
 ### Contact
 
