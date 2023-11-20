@@ -30,12 +30,24 @@ The dataset was loaded using pandas as a DataFrame from the file "/content/sort-
 
 ### Data Exploration and Preprocessing
 
-- The shape and descriptive statistics for the dataset were displayed using `df.shape` and `df.describe()`.
-
-- A pair plot was created to visualize the relationship between advertising expenditure on TV, Radio, Newspaper, and sales using `seaborn.pairplot`.
-
-- Histograms were plotted to observe the distribution of advertising expenditure on TV, Radio, and Newspaper using `matplotlib.pyplot.hist`.
-
+1. Data Overview
+Dataset Description: The dataset comprises predicted conjunctions among Resident Space Objects (RSOs) in Earth's orbit, sourced from CelesTrak, containing details like Time of Closest Approach (TCA), relative speeds, object IDs, and probabilities.
+Initial Assessment: Explored the dataset's structure, dimensions, and identified columns relevant to the analysis.
+2. Handling Missing Values
+Null Values: Detected and addressed missing values, primarily in 'OBJECT_NAME_2', 'DSE_2', 'TCA', 'TCA_RANGE', 'TCA_RELATIVE_SPEED', 'MAX_PROB', and 'DILUTION' columns.
+Approach: Employed techniques such as imputation or removal of missing entries based on their impact on subsequent analyses.
+3. Data Cleaning and Formatting
+Data Consistency: Checked for inconsistencies, ensuring uniformity in data formats, object IDs, and timestamps (TCA).
+Standardization: Formatted timestamps into a uniform datetime format for ease of analysis and comparison.
+4. Feature Selection and Engineering
+Relevance Assessment: Evaluated column significance for correlation analysis, focusing on 'TCA', 'TCA_RANGE', 'TCA_RELATIVE_SPEED', 'MAX_PROB', 'DILUTION', and relevant object identifiers.
+Derived Features: Calculated derived features if needed, possibly integrating new variables based on domain expertise or specific analytical needs.
+5. Exploratory Data Analysis (EDA)
+Statistical Summary: Generated descriptive statistics, such as mean, median, and standard deviation, to understand the dataset's central tendencies and variations.
+Visualization: Utilized histograms, scatter plots, and count plots to visualize distributions and relationships between key variables.
+6. Data Preprocessing
+Normalization/Scaling: Standardized numerical features, ensuring their range consistency for improved model performance.
+Categorical Encoding: Encoded categorical variables if required, converting them into numerical representations.
 ### Correlation Analysis
 TCA Range & Collision Probability:
 Wider Time of Closest Approach (TCA) ranges often correlated with lower collision probabilities, suggesting increased separation might reduce collision likelihood.
